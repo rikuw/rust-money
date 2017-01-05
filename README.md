@@ -6,8 +6,8 @@ extern crate cash;
 use cash::money::Money;
 
 fn main() {
-	let mut five_eur: Money = Money::eur("9895".to_string());
-	five_eur.add("295".to_string());
+	let mut five_eur: Money = Money::eur(9895);
+	five_eur.add(295);
 
 	println!("Money: {}", five_eur.amount);
 }

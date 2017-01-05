@@ -1,21 +1,16 @@
 pub struct Money {
-	pub amount: String,
+	pub amount: i32,
 }
 
 impl Money {
-    pub fn eur(amnt: String) -> Self {
+    pub fn eur(amnt: i32) -> Self {
     	Money {
     		amount: amnt,
     	}
 	}
 
-	pub fn add(&mut self, amnt: String) -> &mut Self {
-		let a: i32 = self.amount.parse().unwrap();
-		let b: i32 = amnt.parse().unwrap();
-
-		let c = a + b;
-
-		self.amount = c.to_string();
+	pub fn add(&mut self, amnt: i32) -> &mut Self {
+		self.amount += amnt;
 		self
 	}
 }

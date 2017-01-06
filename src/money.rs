@@ -3,9 +3,9 @@ pub struct Money {
 }
 
 impl Money {
-    pub fn eur(amnt: i64) -> Self {
+	pub fn eur(amnt: i64) -> Self {
     	Money {
-    		amount: amnt
+    		amount: amnt,
     	}
 	}
 

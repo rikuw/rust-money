@@ -9,6 +9,6 @@ fn main() {
 	let mut five_eur: Money = Money::eur(9895);
 	five_eur.add(295);
 
-	println!("Money: {}", five_eur.amount);
+	println!("Money: {}", five_eur.amount); // $2,95
 }
 ```

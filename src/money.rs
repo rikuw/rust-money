@@ -4,9 +4,9 @@ pub struct Money {
 
 impl Money {
 	pub fn eur(amnt: i64) -> Self {
-    	Money {
-    		amount: amnt,
-    	}
+		Money {
+			amount: amnt,
+		}
 	}
 
 	pub fn add(&mut self, amnt: i64) -> &mut Self {
